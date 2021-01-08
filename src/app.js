@@ -17,6 +17,7 @@ const config = {
   var loop = true;
   while (loop) {
     const start = Date.now();
+    console.log(`iteration #${start}`)
     console.log("updating product variants...");
     await page.evaluate(() =>
       document
@@ -51,7 +52,7 @@ const config = {
       document.querySelector("input[type='submit']")?.click()
     );
 
-    await page.screenshot({ path: `screenshots/final_${Date.now()}.png` });
+    await page.screenshot({ path: `screenshots/final_${start}.png` });
 
     console.log("outputting cookies...");
     const cookies = await page.cookies();
