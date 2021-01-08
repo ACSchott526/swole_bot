@@ -1,7 +1,17 @@
 # Swole Bot
-Trying to get Swole a fking PS5 man.
+Trying to get Swole a fking PS5.
+
+## Build
+```bash
+> yarn build
+```
 
 ## Run
 ```bash
-> while ./swole_bot.sh; do sleep 5; done
+> yarn start
+```
+
+## Lint
+```bash
+> yarn lint
 ```
