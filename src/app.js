@@ -51,7 +51,7 @@ const config = {
       document.querySelector("input[type='submit']")?.click()
     );
 
-    await page.screenshot({ path: "screenshots/final.png" });
+    await page.screenshot({ path: `screenshots/final_${Date.now()}.png` });
 
     console.log("outputting cookies...");
     const cookies = await page.cookies();
