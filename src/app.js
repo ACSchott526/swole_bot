@@ -9,7 +9,7 @@ const config = {
 
 (async () => {
   console.log("starting bot...");
-  const browser = await puppeteer.launch({ headless: false });
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
   await page.setUserAgent(config.userAgent);
   await page.goto(config.url);
