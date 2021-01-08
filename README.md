@@ -1,5 +1,5 @@
 # Swole Bot
-Trying to get Swole a fking PS5.
+Trying to get Swole a fking PS5. Automates part of the checkout process for https://www.sup3r5.com/store/p/retro-inspired-playstation-5-console
 
 ## Build
 ```bash
