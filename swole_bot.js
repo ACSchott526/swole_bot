@@ -23,6 +23,8 @@ const puppeteer = require('puppeteer');
   console.log("submitting form...")
   await page.evaluate(() => document.querySelector("input[type='submit']")?.click());
 
+  await page.screenshot({path: 'final.png'});
+
   console.log("outputting cookies...")
   const cookies = await page.cookies();
   console.log(cookies)
