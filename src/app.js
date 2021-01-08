@@ -4,7 +4,7 @@ const config = {
   url: "https://www.sup3r5.com/store/p/retro-inspired-playstation-5-console",
   userAgent:
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
-  sleep: 10,
+  sleep: 0,
 };
 
 (async () => {
