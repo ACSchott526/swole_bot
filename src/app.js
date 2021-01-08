@@ -4,7 +4,7 @@ const config = {
   url: "http://knots-uk.com/accessories/africaearrings",
   userAgent:
     "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36",
-  sleep: 10000,
+  sleep: 10,
 };
 
 (async () => {
@@ -60,7 +60,7 @@ const config = {
     const cartCookie = cookies.filter((e) => e.name === "CART");
     if (cartCookie.length > 0) {
       console.log(`CART COOKIE: ${cartCookie[0].value}`);
-      // loop = false
+      loop = false;
     }
 
     console.log(`runtime: ${Date.now() - start} ms`);
