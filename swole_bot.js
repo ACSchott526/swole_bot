@@ -8,8 +8,6 @@ const puppeteer = require('puppeteer');
   await page.setUserAgent('Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/78.0.3904.108 Safari/537.36');
   await page.goto('https://www.sup3r5.com/store/p/retro-inspired-playstation-5-console');
 
-  // await page.screenshot({path: '1.png'});
-
   console.log("updating product variants...")
   await page.evaluate(() => document.querySelector(".product-variants")?.setAttribute("data-unselected-options", '[]'))
 
@@ -19,15 +17,11 @@ const puppeteer = require('puppeteer');
 
   await page.evaluate(() => document.querySelector('.sqs-add-to-cart-button-inner')?.click());
 
-  // await page.screenshot({path: '2.png'});
-
   console.log("checking boxes...")
   await page.evaluate(() => document.querySelectorAll("input[type='checkbox']")?.forEach(element => element.parentElement.click()))
 
   console.log("submitting form...")
   await page.evaluate(() => document.querySelector("input[type='submit']")?.click());
-
-  // await page.screenshot({path: '3.png'});
 
   console.log("outputting cookies...")
   const cookies = await page.cookies();
