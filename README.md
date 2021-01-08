@@ -1,5 +1,5 @@
 # Swole Bot
-Try to get Swole a fking PS5 man.
+Trying to get Swole a fking PS5 man.
 
 ## Run
 ```bash
